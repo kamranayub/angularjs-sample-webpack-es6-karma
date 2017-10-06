@@ -1,9 +1,6 @@
 // reuse webpack config
 const webpack = require("./webpack.config");
 
-// Remove entrypoint or weird errors will happen
-webpack.entry = {};
-
 module.exports = config => {
   config.set({
     basePath: "",

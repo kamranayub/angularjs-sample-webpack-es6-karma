@@ -5,8 +5,8 @@ beforeEach(angular.mock.module(dummyComponent))
 let sut
 
 beforeEach(angular.mock.inject(($rootScope, $componentController) => {
-  const $scope = $rootScope.$apply()
-  sut = $componentController("dummy", { $scope })
+  const $scope = $rootScope.$new()
+  sut = $componentController("dummyComponent", { $scope })
 }))
 
 describe("dummy component", () => {

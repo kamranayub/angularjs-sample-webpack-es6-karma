@@ -17,6 +17,11 @@
     "babel-preset-env": "1.6.0",
     "concurrently": "3.5.0",
     "html-webpack-plugin": "2.30.1",
+    "jasmine-core": "2.8.0",
+    "karma": "1.7.1",
+    "karma-chrome-launcher": "2.2.0",
+    "karma-jasmine": "1.1.0",
+    "karma-webpack": "2.0.4",
     "raw-loader": "0.5.1",
     "serve": "6.2.0",
     "webpack": "3.6.0"
@@ -25,6 +30,7 @@
     "start": "concurrently \"npm run build:watch\" \"npm run serve\"",
     "serve": "serve ./build",
     "build": "webpack",
-    "build:watch": "webpack --watch"
+    "build:watch": "webpack --watch",
+    "test": "karma start karma.config.js"
   }
 }
